@@ -29,5 +29,20 @@ header{
     text-align: center;
 }
 
+/* Clock */
+
+clock-container {
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Source Code Pro", sans-serif;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--primary);
+}
+
+
 
 
