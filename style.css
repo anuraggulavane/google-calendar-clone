@@ -60,7 +60,44 @@ header{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.nav-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
 
 
+.nav-btn{
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-dark);
+}
 
 
+.calendar-grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+/* Mobile(Grid)*/
+
+@media(max-width: 1024px) {
+    .calendar-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+    }
+
+    .day, .day-name{
+        min-width: 140px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        
+    }
+}
