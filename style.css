@@ -31,7 +31,7 @@ header{
 
 /* Clock */
 
-clock-container {
+.clock-container {
     background-color: var(--primary-light);
     color: var(--primary-dark);
     font-size: 2rem;
@@ -42,6 +42,24 @@ clock-container {
     letter-spacing: 2px;
     border-bottom: 2px solid var(--primary);
 }
+
+@media (max-width: 768px) {
+    .clock-container{
+        font-size: 1.4rem;
+        padding: 0.75rem;
+    }
+}
+
+/* Calendar Container*/
+.calendar {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 
 
 
