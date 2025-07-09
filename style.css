@@ -98,6 +98,29 @@ header{
         min-width: 140px;
         flex-shrink: 0;
         scroll-snap-align: start;
-        
     }
+}
+
+.day, .day-name {
+    text-align: center;
+}
+
+.day {
+    background: #FFF;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    min-height: 100px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.2s ease;   
+}
+
+
+.day:hover {
+    background: #f3f4f6;
+    
 }
