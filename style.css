@@ -164,3 +164,55 @@ header{
     background: var(--success);
     color: var(--success-text);
 }
+
+.error {
+    background: var(--error);
+    color: var(--error-text);
+}
+
+/* Modal Popup */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 6px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    margin-top: 1rem;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
