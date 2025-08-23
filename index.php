@@ -35,7 +35,7 @@
             </div>
 
 
-        <!--Model for Add/Edit/Delete Appointment--> 
+        <!--Modal for Add/Edit/Delete Appointment--> 
          <div id="eventSelectorWrapper">
             <label for="eventSelector">
                 <strong>Select Event:</strong>
@@ -65,6 +65,16 @@
 
             <button type="submit">Save</button>
          </form>
+
+         <!--Delete Form--> 
+         <form method="POST" onsubmit="return confirm('Are you sure you want to delete this event?')">
+            <input type="hidden" name="action" value="delete">
+            <input type="hidden" name="event_id" id="deleteEvent">
+            <button type="submit" class="submit-btn">🗑️ Delete</button>
+         </form>
+
+         <!--❌ Cancel-->
+         <button type="button" class="submit-btn">❌ Cancel</button>
 
     </body>
     
