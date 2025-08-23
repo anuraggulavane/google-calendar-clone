@@ -1,0 +1,24 @@
+:root {
+    --primary: #3B82F6;
+    --primary-light: #DBEAFE;
+    --primary-dark: #1E3A8A;
+    --primary-background: #F9FaFB;
+    --success: #d1fae5;
+    --success-text: #065f46;
+    --error: #fee2e2;
+    --error-text: #b91c1c; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Code Pro", sans-serif;
+    background-color: var(--primary-background);
+    color: #333;
+    line-height: 1.6;
+}
+
