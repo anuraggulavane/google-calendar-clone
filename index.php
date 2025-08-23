@@ -36,6 +36,9 @@
 
 
         <!--Modal for Add/Edit/Delete Appointment--> 
+         <div class="modal" id="eventModal">
+            <div class= "modal-content">
+
          <div id="eventSelectorWrapper">
             <label for="eventSelector">
                 <strong>Select Event:</strong>
@@ -76,6 +79,10 @@
          <!--❌ Cancel-->
          <button type="button" class="submit-btn">❌ Cancel</button>
 
+    </div>
+</div>
+
+         <script src="calendar.js"><script>
     </body>
     
 </html>
