@@ -1,4 +1,3 @@
-
 <?php
 
 include "calendar.php";
@@ -26,10 +25,10 @@ include "calendar.php";
     <h1>📅 Google Calendar Clone</h1>
   </header>
 
-  <!-- ✅ Success / Error Messages -->
-  <?php if ($successMsg): ?>
+  <?php if (!empty($successMsg)): ?>
     <div class="alert success"><?= $successMsg ?></div>
-  <?php elseif ($errorMsg): ?>
+  <?php endif; ?>
+  <?php if (!empty($errorMsg)): ?>
     <div class="alert error"><?= $errorMsg ?></div>
   <?php endif; ?>
 
